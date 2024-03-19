@@ -63,6 +63,59 @@ body {
 
 
 /* Main Content Styles */
+
+
+/* Card Styles */
+.card {
+    width: 300px;
+    height: 400px; /* Set a fixed height for all cards */
+    border: 1px solid #C2F970;
+    text-align: center;
+    position: relative; /* Position relative for overlay */
+    overflow: hidden; /* Hide overflowing content */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Move card slightly up on hover */
+}
+
+.card-link {
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(68, 52, 79, 0.7), rgba(86, 77, 128, 0.7)); /* Dark overlay */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.card:hover::before {
+    opacity: 1; /* Fully visible on hover */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    color: #D3FCD5; /* Text color */
+    padding: 0 10px; /* Add padding */
+    text-align: center;
+}
+
 .content {
     padding: 20px;
 }
@@ -74,12 +127,31 @@ body {
     gap: 20px;
     font-size: 24px;
 }
-
-.card {
-    width: 300px;
-    border: 1px solid #C2F970; /* Added the missing semicolon */
-    text-align: center; 
+.video-section {
+    text-align: center; /* Center align content */
+    padding: 20px 0; /* Add padding for spacing */
 }
+
+.video-container {
+    max-width: 100%; /* Limit max width */
+    margin: 0 auto; /* Center the container */
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height: 9/16 * 100) */
+    overflow: hidden;
+    width: 100%; /* Make sure the video wrapper takes full width */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Accordion Styles */
 .accordion-item {
