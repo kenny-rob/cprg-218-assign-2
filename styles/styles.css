@@ -1,0 +1,66 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styles */
+.hero-banner {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Main Content Styles */
+.content {
+    padding: 20px;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Accordion Styles */
+.accordion-item {
+    margin-bottom: 20px;
+}
+
+.accordion-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
