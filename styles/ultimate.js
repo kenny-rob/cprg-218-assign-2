@@ -7,4 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
         });
     });
+
+    // Update copyright year once DOMContentLoaded
+    var currentYear = new Date().getFullYear();
+    document.getElementById('copyright-year').textContent = currentYear;
 });
