@@ -134,14 +134,15 @@ h2 {
 }
 
 .video-section {
-    text-align: center; /* Center align content */
-    padding: 20px 0; /* Add padding for spacing */
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column */
+    gap: 20px; /* Gap between columns */
+    padding: 20px;
 }
 
 .video-container {
     position: relative;
     overflow: hidden;
-    width: 100%;
     padding-top: 56.25%; /* 16:9 aspect ratio (height: 9/16 * 100%) */
 }
 
@@ -150,9 +151,37 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    padding: 20px;
+    height: calc(100% - 20px); /* Adjusted height to account for padding */
+    border: 0; /* Remove iframe border */
 }
+
+.video-content {
+    width: 100%; /* Set width to 100% for single column layout */
+}
+
+@media screen and (min-width: 768px) {
+    .video-section {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    }
+}
+
+h4 {
+    display: grid;
+    margin-top: 0; /* Remove default margin */
+    font-size: 40px;
+    background-color: #C2F970;
+    text-align: left;
+    align-self: start; /* Align the h4 to the top of its grid cell */
+}
+
+p {
+    font-size: 20px;
+    color: #44344F;
+    padding: 10px;
+}
+
+
+
 
 /* Accordion Styles */
 .accordion-item {
@@ -185,3 +214,14 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* Target the icon using the correct class name */
+footer a .fab.fa-linkedin {
+    color: #D3FCD5; /* Adjust color as needed */
+}
+
+footer a {
+    font-size: 4vw; /* Adjust as needed */
+}
+
+
