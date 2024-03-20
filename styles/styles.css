@@ -145,6 +145,7 @@ h2 {
     grid-template-columns: 1fr; /* Default to single column */
     gap: 20px; /* Gap between columns */
     padding: 20px;
+    
 }
 
 .video-container {
@@ -172,22 +173,25 @@ h2 {
     }
 }
 
-h4 {
-    display: grid;
-    margin-top: 0; /* Remove default margin */
-    font-size: 40px;
-    background-color: #C2F970;
-    text-align: left;
-    align-self: start; /* Align the h4 to the top of its grid cell */
-}
 
 p {
-    font-size: 25px;
-    padding: 10px;
+    font-size: 2vw; /* Example: set font size to 2% of the viewport width */
+    padding: 2%; /* Example: set padding to 2% of the parent element's width */
 }
 
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
 
-
+@media screen and (min-width: 2560px) {
+    p {
+        font-size: 25px; /* Adjust font size for 4K screens */
+        padding: 20px; /* Adjust padding for 4K screens */
+    }
+}
 
 /* Accordion Styles */
 .accordion-item {
@@ -213,6 +217,29 @@ p {
     padding: 10px 20px;
 }
 
+.fa-solid,
+.fa-brands {
+    font-size: 2vw;
+    margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+h4 {
+    font-size: 40px;
+    background-color: #C2F970;
+    text-align: left;
+    margin-top: 0; /* Remove default margin */
+}
+
+@media screen and (max-width: 768px) {
+    .fa-brands {
+        font-size: 32px; /* Example: set a minimum font size for smaller screens */
+    }
+}
+@media screen and (max-width: 768px) {
+    .fa-solid {
+        font-size: 32px; /* Example: set a minimum font size for smaller screens */
+    }
+}
 /* Footer Styles */
 footer {
     background-color: #44344F;
@@ -221,13 +248,5 @@ footer {
     padding: 20px;
 }
 
-/* Target the icon using the correct class name */
-footer a .fab.fa-linkedin {
-    color: #D3FCD5; /* Adjust color as needed */
-}
-
-footer a {
-    font-size: 4vw; /* Adjust as needed */
-}
 
 
