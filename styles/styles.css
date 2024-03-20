@@ -173,9 +173,8 @@ h2 {
     }
 }
 
-
 p {
-    font-size: 2vw; /* Example: set font size to 2% of the viewport width */
+    font-size: 1.5vw; /* Example: set font size to 2% of the viewport width */
     padding: 2%; /* Example: set padding to 2% of the parent element's width */
 }
 
@@ -192,6 +191,7 @@ p {
         padding: 20px; /* Adjust padding for 4K screens */
     }
 }
+
 
 /* Accordion Styles */
 .accordion-item {
