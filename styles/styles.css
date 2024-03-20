@@ -59,6 +59,13 @@ body {
     z-index: 2; /* Make sure the text is above the background overlay */
 }
 
+@media screen and (max-width: 768px) {
+    .hero-text {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+}
+
+
 
 
 
@@ -175,8 +182,7 @@ h4 {
 }
 
 p {
-    font-size: 20px;
-    color: #44344F;
+    font-size: 25px;
     padding: 10px;
 }
 
