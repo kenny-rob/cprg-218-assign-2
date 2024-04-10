@@ -231,6 +231,26 @@ p {
     }
 }
 
+/* Base font size for mobile devices */
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+    color: white; /* Optional: Set text color */
+    padding: 10px;
+    font-size: 16px; /* Adjust as needed */
+    z-index: 1; /* Ensure figcaption appears above other elements */
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media screen and (min-width: 600px) {
+    figcaption {
+        font-size: 1.5vw; /* Set font size to 1.5% of the viewport width */
+        padding: 2%; /* Set padding to 2% of the parent element's width */
+    }
+}
 
 /* Accordion Styles */
 .accordion-item {
