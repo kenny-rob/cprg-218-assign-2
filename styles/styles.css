@@ -224,10 +224,22 @@ p {
 }
 
 h4 {
-    font-size: 40px;
-    background-color: #C2F970;
-    text-align: left;
-    margin-top: 0; /* Remove default margin */
+    font-size: 1.5vw; /* Example: set font size to 2% of the viewport width */
+    padding: 2%;
+    color: #D3FCD5
+}
+@media screen and (max-width: 768px) {
+    h4 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    h4 {
+        font-size: 24px; /* Adjust font size for 4K screens */
+        padding: 20px; /* Adjust padding for 4K screens */
+    }
 }
 
 @media screen and (max-width: 768px) {
