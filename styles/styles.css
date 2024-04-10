@@ -65,7 +65,25 @@ body {
     }
 }
 
+h2 {
+    font-size: 1.5vw; /* Example: set font size to 2% of the viewport width */
+    padding: 2%;
+    color: #d3fcd3
+}
 
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    h2 {
+        font-size: 24px; /* Adjust font size for 4K screens */
+        padding: 20px; /* Adjust padding for 4K screens */
+    }
+}
 
 
 
@@ -132,7 +150,7 @@ body {
     padding: 20px;
 }
 
-h2 {
+h3 {
     position: relative;
     bottom: 20px;
     font-size: 40px;
@@ -171,6 +189,14 @@ h2 {
     .video-section {
         grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
     }
+}
+
+h4 {
+    position: relative;
+    bottom: 20px;
+    font-size: 40px;
+    background-color:  #C2F970;
+    text-align: left;
 }
 
 p {
@@ -221,25 +247,6 @@ p {
 .fa-brands {
     font-size: 2vw;
     margin-right: 10px; /* Add spacing between the icon and text */
-}
-
-h4 {
-    font-size: 1.5vw; /* Example: set font size to 2% of the viewport width */
-    padding: 2%;
-    color: #D3FCD5
-}
-@media screen and (max-width: 768px) {
-    h4 {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    h4 {
-        font-size: 24px; /* Adjust font size for 4K screens */
-        padding: 20px; /* Adjust padding for 4K screens */
-    }
 }
 
 @media screen and (max-width: 768px) {
